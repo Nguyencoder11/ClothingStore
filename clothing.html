@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./source/css_file/style.css">
+    <link rel="stylesheet" href="./source/css_file/base.css">
+    <link rel="stylesheet" href="./source/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./source/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+
+<body>
+    <!-- On PC -->
+    <!-- Left Sidebar -->
+    <nav id="mySidebar" class="menu_left pc ta" style="z-index: 3; width: 250px;">
+        <div class="menu_left-logo">
+            <i onclick="w3_close()" class="icon-close pc ta fa-solid fa-xmark"></i>
+            <h3 class="menu_title">
+                <b style="font-weight: bolder;">LOGO</b>
+            </h3>
+        </div>
+        <div class="menu_left-lists">
+            <a class="menu_left-link" href="#">Shirts</a>
+            <a class="menu_left-link" href="#">Dresses</a>
+            <a class="menu_left-link" href="javascript:void(0)" style="color: black;" onclick="myAccFunc()"
+                id="myBtn">Jeans<i class="down-arrow fa-solid fa-caret-down"></i></a>
+            <div id="demoAcc" class="menu_list-down show-list w3-hide w3-show">
+                <a class="menu_left-link" href="#" style="color: black; background-color: #f1f1f1;">
+                    <i class="right-arrow fa-solid fa-caret-right"></i> Skinny
+                </a>
+                <a class="menu_left-link" href="#">Relaxed</a>
+                <a class="menu_left-link" href="#">Bootcut</a>
+                <a class="menu_left-link" href="#">Straight</a>
+            </div>
+            <a class="menu_left-link" href="#">Jackets</a>
+            <a class="menu_left-link" href="#">Gymwear</a>
+            <a class="menu_left-link" href="#">Blazers</a>
+            <a class="menu_left-link" href="#">Shoes</a>
+        </div>
+        <a class="menu_left-link" href="#contact" style="color: #000;">Contact</a>
+        <a id="linkto" class="menu_left-link" href="#" style="color: #000;">Newsletter</a>
+        <a class="menu_left-link" href="#contact" style="color: #000;">Subscribe</a>
+    </nav>
+
+    <!-- Menu on small screen -->
+    <header class="mobile_header pc ta">
+        <div class="mobile_logo">LOGO</div>
+        <a href="javascript:void(0)" class="mobile-link" onclick="w3_open()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </a>
+    </header>
+    <div id="myOverlay" class="overlay" onclick="w3_close()">
+
+    </div>
+
+    <!-- Content -->
+    <div class="content pc ta">
+        <div class="div-about pc ta" style="margin-top: 83px;"></div>
+        <!-- Top header -->
+        <header class="content_header">
+            <p class="header-title">
+                Jeans
+            </p>
+            <p class="icons">
+                <i class="icon-cart fa-solid fa-cart-shopping"></i>
+                <i class="icon-search fa-solid fa-magnifying-glass"></i>
+            </p>
+        </header>
+
+        <!-- Image Banner -->
+        <div class="content_image">
+            <img src="./source/image/jeans.jpg" alt="">
+            <div class="content_image-about">
+                <h1 class="banner_title1 mo zoom" style="font-weight: 400;">New arrivals</h1>
+                <!-- <h1>New arrivals</h1> -->
+                <h1 class="banner_title2 ta" style="font-weight: 400; font-size: 36px;">COLLECTION 2016</h1>
+                <p>
+                    <a class="header-btn" href="#jeans">SHOP NOW</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Number items -->
+        <div class="number-items">
+            <p>8 items</p>
+        </div>
+
+        <!-- Products -->
+        <div class="content_product" id="jeans">
+            <div class="product">
+                <img src="./source/image/jeans1.jpg" alt="">
+                <p>Ripped Skinny Jeans
+                    <br>
+                    <b>$24.99</b>
+                </p>
+            </div>
+            <div class="product">
+                <div class="product-img2">
+                    <img src="./source/image/jeans2.jpg" alt="">
+                    <span>New</span>
+                </div>
+                <p>Mega Ripped Jeans
+                    <br>
+                    <b>$19.99</b>
+                </p>
+            </div>
+            <div class="product">
+                <img src="./source/image/jeans3.jpg" alt="">
+                <p>Washed Skinny Jeans
+                    <br>
+                    <b>$20.50</b>
+                </p>
+            </div>
+            <div class="product">
+                <img src="./source/image/jeans4.jpg" alt="">
+                <p>Vintage Skinny Jeans
+                    <br>
+                    <b>$14.99</b>
+                </p>
+            </div>
+            <div class="product">
+                <img src="./source/image/jeans2.jpg" alt="">
+                <p>Mega Ripped Jeans
+                    <br>
+                    <b>$19.99</b>
+                </p>
+            </div>
+            <div class="product">
+                <img src="./source/image/jeans3.jpg" alt="">
+                <p>Washed Skinny Jeans
+                    <br>
+                    <b>$20.50</b>
+                </p>
+            </div>
+            <div class="product">
+                <div class="product-img7">
+                    <img src="./source/image/jeans4.jpg" alt="">
+                    <span>Sale</span>
+                </div>
+                <p>Vintage Skinny Jeans
+                    <br>
+                    <b style="color: #f44336;">$14.99</b>
+                </p>
+            </div>
+            <div class="product">
+                <img src="./source/image/jeans1.jpg" alt="">
+                <p>Ripped Skinny Jeans
+                    <br>
+                    <b>$24.99</b>
+                </p>
+            </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="subcribe">
+            <h1 style="font-weight: 400; ">Subscribe</h1>
+            <p>To get special offers and VIP treatment:</p>
+            <p class="input">
+                <input type="text" placeholder="Enter e-mail">
+            </p>
+            <button type="button">Subscribe</button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="contact" id="contact">
+                <div class="contact_wrap">
+                    <h4>Contact</h4>
+                    <p style="margin: 12px 0; font-size: 12px !important;">Questions? Go ahead.</p>
+                    <form action="" target="_blank">
+                        <p class="form_input">
+                            <input type="text" placeholder="Name" required>
+                        </p>
+                        <p class="form_input">
+                            <input type="text" placeholder="Email" required>
+                        </p>
+                        <p class="form_input">
+                            <input type="text" placeholder="Subject" required>
+                        </p>
+                        <p class="form_input">
+                            <input type="text" placeholder="Message" required>
+                        </p>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact_wrap">
+                    <h4>About</h4>
+                    <p>
+                        <a class="about-link" href="#">About us</a>
+                    </p>
+                    <p>
+                        <a class="about-link" href="#">We're hiring</a>
+                    </p>
+                    <p>
+                        <a class="about-link" href="#">Support</a>
+                    </p>
+                    <p>
+                        <a class="about-link" href="#">Find store</a>
+                    </p>
+                    <p>
+                        <a class="about-link" href="#">Shipment</a>
+                    </p>
+                    <p>
+                        <a class="about-link" href="#">Payment</a>
+                    </p>
+                    <p>
+                        <a class="about-link" href="#">Gift card</a>
+                    </p>
+                    <p>
+                        <a class="about-link" href="#">Return</a>
+                    </p>
+                    <p>
+                        <a class="about-link" href="#">Help</a>
+                    </p>
+                </div>
+                <div class="contact_wrap" style="text-align: justify;">
+                    <h4>Store</h4>
+                    <p>
+                        <i class="footer-icon fa-solid fa-location-dot"></i>
+                        Company Name
+                    </p>
+                    <p>
+                        <i class="footer-icon fa-solid fa-phone"></i>
+                        0044123123
+                    </p>
+                    <p>
+                        <i class="footer-icon fa-solid fa-envelope"></i>
+                        ex@mail.com
+                    </p>
+                    <h4>We accept</h4>
+                    <p>
+                        <i class="footer-icon fa-brands fa-cc-amex"></i>
+                        Amex
+                    </p>
+                    <p>
+                        <i class="footer-icon fa-regular fa-credit-card"></i>
+                        Credit card
+                    </p>
+                    <br>
+                    <i class="socials-icon fa-brands fa-square-facebook"></i>
+                    <i class="socials-icon fa-brands fa-instagram"></i>
+                    <i class="socials-icon fa-brands fa-square-snapchat"></i>
+                    <i class="socials-icon fa-brands fa-pinterest-p"></i>
+                    <i class="socials-icon fa-brands fa-twitter"></i>
+                    <i class="socials-icon fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </footer>
+        <div class="end-footer">
+            Power by <a href="#" target="_blank" title="W3.CSS">Nguyen
+                Coder</a>
+        </div>
+    </div>
+
+    <!-- modal newsletter -->
+    <div id="newsletter" class="newslettter-modal w3-modal">
+        <div class="box_modal modal-content">
+            <div class="box_form">
+                <i class="fa-sharp fa-solid fa-xmark fa-x"></i>
+                <h2 style="letter-spacing: 4px; font-weight: 400; margin: 10px 0; font-size: 30px;">NEWSLETTER</h2>
+                <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                <p>
+                    <input type="text" placeholder="Enter e-mail">
+                </p>
+                <button type="button" class="subscribe_btn">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // accordition
+        function myAccFunc() {
+            var x = document.getElementById('demoAcc');
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // Click "Jeans" link to open accordition
+        document.getElementById('myBtn').click();
+
+        // Open and Close side bar
+        function w3_open() {
+            document.getElementById('mySidebar').style.display = "block";
+            document.getElementById('myOverlay').style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById('mySidebar').style.display = "none";
+            document.getElementById('myOverlay').style.display = "none";
+        }
+
+
+        var open = document.querySelector('#linkto');
+        var close = document.querySelector('.fa-x');
+
+        var modal = document.querySelector("#newsletter");
+        var clickClose = document.querySelector(".subscribe_btn");
+
+        open.addEventListener("click", function () {
+            modal.style.display = "block";
+        });
+
+        close.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+
+        clickClose.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
